@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="th">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>Anti-Choking Suction Device | อุปกรณ์ช่วยดูดสิ่งแปลกปลอมที่ติดคอ พร้อมหน้ากาก 3 ขนาด | Zovimart</title>
+    <meta content="Anti-Choking Suction Device - อุปกรณ์ช่วยดูดสิ่งแปลกปลอมที่ติดคอ พร้อมหน้ากาก 3 ขนาด อุปกรณ์ช่วยดูดสิ่งแปลกปลอมที่ติดคอ ราคา 699 บาท ส่งฟรีทั่วประเทศไทย" name="description" />
+    <style>
+        *{box-sizing:border-box}
+        html{scroll-behavior:smooth;scroll-padding-top:62px}
+        body{margin:0;background:#f2f2f2;color:#222;font-family:Arial,Helvetica,sans-serif}
+        button,input,textarea{font:inherit}
+        a{text-decoration:none;color:inherit}
+        .site{max-width:760px;margin:auto;background:#fff;min-height:100vh;box-shadow:0 0 25px rgba(0,0,0,.07)}
+        .header{position:sticky;top:0;z-index:50;height:56px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 11px;border-bottom:1px solid #ddd}
+        .header-title{font-size:14px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+        .header-buy{background:#ff3d22;color:#fff;border:0;border-radius:9px;padding:10px 15px;font-weight:900;font-size:13px;white-space:nowrap;animation:buyPulse 1.8s ease-in-out infinite}
+        .gallery{height:430px;position:relative;overflow:hidden;background:#fff;touch-action:pan-y;user-select:none}
+        .track{height:100%;display:flex;transition:transform .45s ease}
+        .slide{min-width:100%;height:100%;flex:0 0 100%;display:flex;align-items:center;justify-content:center;background:#fff}
+        .slide img{width:100%;height:100%;object-fit:contain;display:block;pointer-events:none}
+        .arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:36px;height:36px;border:0;border-radius:50%;background:rgba(0,0,0,.35);color:#fff;font-size:25px;cursor:pointer}
+        .prev{left:9px}.next{right:9px}
+        .dots{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);display:flex;gap:5px;background:rgba(0,0,0,.3);padding:5px 8px;border-radius:20px}
+        .dot{width:7px;height:7px;border:0;border-radius:50%;background:#ddd;padding:0}.dot.active{width:18px;border-radius:6px;background:#fff}
+        .count{position:absolute;right:0;bottom:9px;background:rgba(0,0,0,.58);color:#fff;padding:5px 10px;border-radius:15px 0 0 15px;font-size:11px;font-weight:800}
+        .hero{padding:12px 13px 9px}
+        .hero h1{font-size:20px;line-height:1.4;margin:0 0 7px}
+        .rating{display:flex;align-items:center;gap:7px;font-size:12px}.rating b{font-size:16px}.stars{color:#ffb900;letter-spacing:1px;font-size:16px}
+        .deal{margin-top:11px;background:linear-gradient(105deg,#ff3154,#ff5a21);color:#fff;padding:11px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;overflow:hidden}
+        .price-label{font-size:11px;font-weight:800}.price{display:inline-block;font-size:31px;font-weight:950;line-height:1.05;margin-top:2px;animation:pricePulse 1.65s ease-in-out infinite}
+        .old{display:block;font-size:11px;opacity:.8;margin-top:4px}.deal-right{text-align:center;min-width:145px}.urgency{font-size:11px;font-weight:900}.timer{display:flex;justify-content:center;align-items:center;gap:3px;margin-top:5px;font-weight:900}.timer span{font-size:19px;min-width:20px}.timer b{font-size:15px}
+        .quick-points{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;padding:10px 12px;border-bottom:7px solid #f3f3f3}
+        .quick{border:1px solid #eee;border-radius:9px;padding:9px 5px;text-align:center;font-size:10px;line-height:1.35}.quick strong{display:block;font-size:20px;margin-bottom:3px}
+        .order-box{margin:13px 12px;padding:14px;background:#f3f4f5;border-radius:13px}
+        .order-title{text-align:center}.order-title h2{margin:2px 0 5px;font-size:19px}.order-title p{margin:0 0 12px;font-size:12px;color:#ef3152}
+        .packages{display:grid;gap:7px;margin-bottom:11px}
+        .pkg{position:relative;border:1.5px solid #ddd;border-radius:9px;background:#fff;padding:10px 10px;cursor:pointer;display:flex;align-items:center;gap:8px}
+        .pkg.selected{border-color:#ff3154;background:#fff6f7;box-shadow:0 0 0 1px #ff3154}
+        .pkg input{accent-color:#ff3154}
+        .pkg-main{flex:1}.pkg-main b{display:block;font-size:14px}.pkg-main small{display:block;color:#777;font-size:11px;margin-top:3px}
+        .pkg-price{font-size:14px;color:#ff3154;font-weight:900;text-align:right}.pkg-price small{display:block;color:#777;font-weight:500;font-size:10px}
+        .field{width:100%;border:1px solid #ddd;border-radius:8px;background:#fff;padding:13px 11px;margin-bottom:9px;outline:0}
+        .field:focus{border-color:#ff3154;box-shadow:0 0 0 2px #ff31541a}
+        .submit{width:100%;border:0;border-radius:10px;background:#ff3154;color:#fff;padding:16px 10px;font-size:20px;font-weight:950;cursor:pointer;animation:buyPulse 1.55s ease-in-out infinite;box-shadow:0 4px 0 #c81738}
+        .note{text-align:center;color:#777;font-size:10px;line-height:1.45;margin:9px 0 0}
+        .section{padding:15px 12px}.section h2{text-align:center;font-size:19px;margin:4px 0 13px}
+        .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+        .feature{border:1px solid #eee;border-radius:11px;padding:12px;background:#fff}
+        .feature .ico{font-size:25px}.feature b{display:block;font-size:14px;margin-top:5px}.feature p{font-size:11px;color:#666;line-height:1.45;margin:5px 0 0}
+        .info{background:#fff8ec;border-radius:12px;padding:13px;margin-top:11px}
+        .info p{font-size:13px;line-height:1.55;margin:5px 0}.info ul{padding-left:20px;margin:8px 0}.info li{font-size:13px;line-height:1.55;margin-bottom:5px}
+        .images img{width:100%;display:block;border-radius:10px;margin:9px 0}
+        /* Customer review section: responsive image sizing fix */
+        .tea-reviews{border-top:8px solid #f3f3f3;padding:15px 12px 20px;background:#fff;overflow:hidden}
+        .tea-reviews h2{text-align:center;font-size:19px;line-height:1.4;margin:4px 0 13px}
+        .tea-review-summary{text-align:center;border-bottom:1px solid #eee;padding:0 0 12px;display:flex;flex-direction:column;align-items:center;gap:3px}
+        .tea-review-summary strong{font-size:23px;line-height:1.2}
+        .tea-review-summary small{font-size:11px;color:#777}
+        .tea-review{padding:13px 0;border-bottom:1px solid #eee;min-width:0;overflow:hidden}
+        .tea-review-user{display:flex;align-items:center;gap:8px;min-width:0}
+        .tea-review-user>div{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:0}
+        .tea-review-user b{font-size:13px;line-height:1.35}
+        .tea-review-user small{font-size:10px;color:#009b63;line-height:1.35}
+        .tea-review-avatar{width:38px;height:38px;min-width:38px;flex:0 0 38px;border-radius:50%;display:grid;place-items:center;background:#222;color:#fff;font-weight:900;font-size:14px}
+        .tea-review p{font-size:13px;line-height:1.5;margin:8px 0;overflow-wrap:anywhere}
+        .tea-review .stars{display:inline-block;color:#ffb900;letter-spacing:1px;font-size:14px;line-height:1.2}
+        .tea-review img{display:block;width:auto!important;height:auto!important;max-width:100%;max-height:300px;object-fit:contain;object-position:left center;border-radius:8px;margin:8px 0 0;border:1px solid #eee}
+        .tea-shop-proof{margin-top:13px;padding:12px;background:#f7faf5;border:1px solid #e4eadf;border-radius:9px;font-size:12px;line-height:1.5;color:#555}
+        .tea-shop-proof b{color:#227548}
+        @media(max-width:390px){.tea-reviews{padding-left:10px;padding-right:10px}.tea-review img{max-height:240px}}
+        .reviews{border-top:8px solid #f3f3f3;padding:15px 12px 20px}.review-summary{text-align:center;border-bottom:1px solid #eee;padding-bottom:12px}.review-summary strong{font-size:23px}.review{padding:13px 0;border-bottom:1px solid #eee}.review-user{display:flex;align-items:center;gap:8px}.avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#222;color:#fff;font-weight:900}.review-user b{font-size:13px}.review p{font-size:13px;line-height:1.5;margin:8px 0}.verified{color:#009b63;font-size:10px}
+        .review-buy{display:flex;align-items:center;justify-content:center;width:96%;margin:13px auto 3px;padding:14px 18px;background:linear-gradient(135deg,#ff4d00,#ff1f00);color:#fff;border-radius:10px;font-size:18px;font-weight:900;animation:reviewPulse 1.8s ease-in-out infinite;box-shadow:0 5px 15px #ff3c002d}
+        .shop{background:#f7faf5;margin-top:12px;padding:15px 13px;border-top:1px solid #e4eadf;border-bottom:1px solid #e4eadf}.shop b{font-size:16px}.shop p{font-size:12px;color:#666;line-height:1.5}
+        .final{background:#fff2f3;text-align:center;padding:24px 13px 84px}.final h2{margin:0 0 7px;font-size:20px}.final p{color:#666}.final strong{color:#ff3154;font-size:27px}.final a{display:block;max-width:420px;margin:13px auto 0;padding:16px;background:#ff3154;color:#fff;border-radius:10px;font-size:19px;font-weight:950;animation:buyPulse 1.55s infinite}
+        .bottom{position:fixed;z-index:100;bottom:0;left:50%;transform:translateX(-50%);width:min(760px,100%);background:#fff;border-top:1px solid #ddd;padding:7px 9px calc(7px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1.55fr;gap:7px}.bottom a{display:flex;align-items:center;justify-content:center;border-radius:8px;font-weight:900;font-size:14px;padding:12px}.bottom .price-mini{border:1px solid #ff3154;color:#ff3154}.bottom .buy-mini{background:#ff3154;color:#fff;animation:buyPulse 1.55s infinite}
+        .success{position:fixed;inset:0;background:rgba(247,252,248,.97);z-index:999;display:none;align-items:center;justify-content:center;padding:20px}.success.show{display:flex}.success-card{text-align:center;max-width:500px}.success-icon{width:76px;height:76px;border-radius:50%;background:#e3f4e9;color:#1c664a;display:grid;place-items:center;font-size:47px;margin:auto auto 20px}.success h2{font-size:27px;color:#195940;margin:0 0 10px}.success p{color:#737a76;line-height:1.55;font-size:14px}.success button{width:100%;border:0;border-radius:12px;background:#d18a24;color:#fff;padding:15px;font-weight:900;margin-top:10px}
+        @keyframes pricePulse{0%,100%{transform:scale(1)}45%{transform:scale(1.065)}60%{transform:scale(1.025)}}
+        @keyframes buyPulse{0%,100%{transform:scale(1);box-shadow:0 4px 0 rgba(174,0,38,.2)}50%{transform:scale(1.035);box-shadow:0 5px 0 rgba(174,0,38,.15),0 0 0 7px rgba(255,49,86,.09)}}
+        @keyframes reviewPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+        @media(max-width:390px){.gallery{height:360px}.hero h1{font-size:18px}.price{font-size:27px}.deal-right{min-width:132px}.timer span{font-size:17px}.quick strong{font-size:18px}.feature-grid{gap:7px}}
+        @media(prefers-reduced-motion:reduce){.price,.submit,.header-buy,.final a,.bottom .buy-mini,.review-buy{animation:none}}
+    </style>
+
+
+
+
+    <!-- Meta Pixel: replace only the ID below when you have a Thailand Pixel -->
+    <!-- <script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2128053304586450');
+fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'Anti-Choking Suction Device',content_type:'product',content_ids:['anti-choking-suction-device'],value:699,currency:'THB'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2128053304586450&ev=PageView&noscript=1" alt=""/></noscript> -->
+</head>
+
+<body>
+    <div class="site">
+        <header class="header">
+            <div class="header-title">🛟 Anti-Choking Suction Device | อุปกรณ์ช่วยดูดสิ่งแปลกปลอมที่ติดคอ</div>
+            <button class="header-buy" onclick="scrollToOrder()" type="button">🛒 สั่งซื้อเลย</button>
+        </header>
+        <section class="gallery" id="gallery">
+            <div class="track" id="track">
+                <div class="slide"><img alt="อุปกรณ์ช่วยดูดสิ่งแปลกปลอมที่ติดคอ พร้อมหน้ากาก 3 ขนาด" src="assets/h2.webp" /></div>
+                <div class="slide"><img alt="อุปกรณ์ช่วยดูดสิ่งแปลกปลอมที่ติดคอ พร้อมหน้ากาก 3 ขนาด" src="assets/h1.webp" /></div>
+                <div class="slide"><img alt="อุปกรณ์ช่วยดูดสิ่งแปลกปลอมที่ติดคอ พร้อมหน้ากาก 3 ขนาด" src="assets/h3.jpg" /></div>
+            </div>
+            <button aria-label="เลื่อนรูปสินค้า" class="arrow prev" id="prev">‹</button>
+            <button aria-label="เลื่อนรูปสินค้า" class="arrow next" id="next">›</button>
+            <div class="dots" id="dots"></div>
+            <div class="count" id="count">1/3</div>
+        </section>
+        <section class="hero">
+            <h1>🛟 Anti-Choking Suction Device<br/>อุปกรณ์ช่วยดูดสิ่งแปลกปลอมที่ติดคอ พร้อมหน้ากาก 3 ขนาด สำหรับเตรียมไว้ในบ้าน</h1>
+
+            <div class="deal">
+                <div>
+                    <div class="price-label">🎉 ราคาพิเศษ</div>
+                    <div class="price">699 บาท</div>
+                    <span class="old">1 ชุด พร้อมหน้ากาก 3 ขนาด · ส่งฟรีทั่วไทย</span>
+                </div>
+
+            </div>
+        </section>
+        <section class="quick-points">
+            <div class="quick"><strong>🛟</strong><b>อุปกรณ์ช่วยเหลือ</b>
+                <br/>สำหรับสถานการณ์ฉุกเฉิน</div>
+            <div class="quick"><strong>📦</strong><b>หน้ากาก 3 ขนาด</b>
+                <br/>เลือกให้เหมาะสมตามคู่มือ</div>
+            <div class="quick"><strong>🚚</strong><b>ส่งฟรีทั่วไทย</b>
+                <br/>ชำระเงินปลายทาง</div>
+        </section>
+        <section class="order-box" id="dat-hang">
+            <div class="order-title">
+                <h2>🛒 สั่งซื้อสินค้า</h2>
+                <p>จัดส่งฟรีทั่วประเทศไทย · ชำระเงินปลายทาง</p>
+            </div>
+            <div class="packages" id="packages">
+                <label class="pkg selected">
+                    <input checked="" data-price="699" data-shipping="0" name="package" type="radio" value="1" /><span class="pkg-main"><b>1 ชุด</b><small>ส่งฟรีทั่วประเทศไทย</small></span><span class="pkg-price">699 บาท<small>FREE SHIPPING</small></span></label>
+                <label class="pkg">
+                    <input data-price="1290" data-shipping="0" name="package" type="radio" value="2" /><span class="pkg-main"><b>2 ชุด</b><small>ประหยัด 108 บาท · ส่งฟรี</small></span><span class="pkg-price">1,290 บาท<small>FREE SHIPPING</small></span></label>
+            </div>
+            <div id="orderSummary" style="background:#fff;border-radius:8px;padding:10px;margin-bottom:10px;font-size:12px;line-height:1.55"><b>รายการสั่งซื้อ:</b> <span id="summaryPackage">1 ชุด</span>
+                <br/>ราคาสินค้า: <b id="summaryPrice">699 บาท</b> · ค่าจัดส่ง: <b id="summaryShip">ฟรี</b>
+                <br/>ยอดชำระทั้งหมด: <b id="summaryTotal" style="color:#ff3154;font-size:16px">699 บาท</b></div>
+            <form id="orderForm">
+                <input autocomplete="name" class="field" id="name" placeholder="ชื่อผู้รับ *" type="text" />
+                <input autocomplete="tel" class="field" id="phone" inputmode="numeric" placeholder="เบอร์โทรศัพท์ *" type="tel" />
+                <textarea autocomplete="street-address" class="field" id="address" placeholder="ที่อยู่จัดส่ง (บ้านเลขที่ หมู่ ถนน ตำบล อำเภอ จังหวัด รหัสไปรษณีย์) *" rows="3"></textarea>
+                <button class="submit" id="submitOrderBtn" type="submit">🛒 ยืนยันคำสั่งซื้อ</button>
+            </form>
+            <p class="note">🔒 ไม่ต้องชำระเงินล่วงหน้า · เจ้าหน้าที่อาจโทรยืนยันคำสั่งซื้อ · ใช้ข้อมูลเพื่อจัดส่งสินค้าเท่านั้น</p>
+        </section>
+        <section class="section">
+            <h2>✨ ข้อมูลสำคัญเกี่ยวกับผลิตภัณฑ์</h2>
+            <div class="feature-grid">
+                <article class="feature">
+                    <div class="ico">🛟</div><b>อุปกรณ์ช่วยเหลือ</b>
+                    <p>ออกแบบมาเพื่อช่วยดูดสิ่งอุดกั้นทางเดินหายใจตามคำแนะนำของผู้ผลิต</p>
+                </article>
+                <article class="feature">
+                    <div class="ico">📏</div><b>หน้ากาก 3 ขนาด</b>
+                    <p>มีหน้ากากหลายขนาดให้เลือกตามคู่มือการใช้งาน</p>
+                </article>
+                <article class="feature">
+                    <div class="ico">🏠</div><b>เตรียมไว้ที่บ้าน</b>
+                    <p>จัดเก็บในจุดที่หยิบใช้ได้สะดวกเมื่อจำเป็น</p>
+                </article>
+                <article class="feature">
+                    <div class="ico">📖</div><b>อ่านคู่มือก่อนใช้</b>
+                    <p>ศึกษาข้อจำกัดและวิธีใช้งานที่ถูกต้องก่อนใช้งาน</p>
+                </article>
+            </div>
+            <div class="info">
+                <p><b>📌 รายละเอียดและข้อควรระวัง</b></p>
+                <ul>
+                    <li>1 ชุด ราคา 699 บาท / 2 ชุด ราคา 1,290 บาท จัดส่งฟรีทั่วไทย</li>
+                    <li>อุปกรณ์พร้อมหน้ากาก 3 ขนาด (โปรดตรวจสอบรายการอุปกรณ์จริงก่อนเผยแพร่)</li>
+                    <li>ควรศึกษาคู่มือของผู้ผลิต และตรวจสอบความเหมาะสมก่อนใช้</li>
+                    <li>อุปกรณ์นี้ไม่ทดแทนการปฐมพยาบาลมาตรฐานหรือการติดต่อหน่วยแพทย์ฉุกเฉิน</li>
+                    <li>หากมีผู้สำลักรุนแรง ให้ขอความช่วยเหลือฉุกเฉิน โทร 1669 ในประเทศไทย</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section images">
+            <h2>📷 ภาพผลิตภัณฑ์และอุปกรณ์</h2>
+            <img alt="ภาพอุปกรณ์ช่วยดูดสิ่งแปลกปลอมที่ติดคอ พร้อมหน้ากาก 3 ขนาด" src="assets/h2.webp" />
+            <img alt="ภาพอุปกรณ์ช่วยดูดสิ่งแปลกปลอมที่ติดคอ พร้อมหน้ากาก 3 ขนาด" src="assets/h1.webp" />
+            <img alt="ภาพอุปกรณ์ช่วยดูดสิ่งแปลกปลอมที่ติดคอ พร้อมหน้ากาก 3 ขนาด" src="assets/h3.jpg" />
+        </section>
+        <section class="tea-reviews" id="danh-gia">
+            <h2>⭐ ข้อมูลและรีวิวสินค้า</h2>
+            <div class="tea-review-summary"><strong>4.9/5</strong><span class="stars">★★★★★</span><small>ลูกค้าที่ซื้อสินค้าแล้ว</small></div>
+            <div id="teaReviewList">
+                <article class="tea-review">
+                    <div class="tea-review-user"><span class="tea-review-avatar">ก</span>
+                        <div><b>สาธุ สาธุ</b><small>✓ ยืนยันการสั่งซื้อแล้ว</small></div>
+                    </div>
+                    <p>ได้รับสินค้าแล้วค่ะ แพ็กมาเรียบร้อยดี อุปกรณ์ครบตามรายละเอียดที่แจ้งไว้ค่ะ</p>
+                </article>
+                <article class="tea-review">
+                    <div class="tea-review-user"><span class="tea-review-avatar">ข</span>
+                        <div><b>Somchai Yimpat</b><small>✓ ยืนยันการสั่งซื้อแล้ว</small></div>
+                    </div>
+                    <p>ตัวเครื่องขนาดกะทัดรัด จัดเก็บสะดวก มีหน้ากากให้เลือกหลายขนาดค่ะ</p>
+                </article>
+                <article class="tea-review">
+                    <div class="tea-review-user"><span class="tea-review-avatar">ค</span>
+                        <div><b>องค์ ชาย</b><small>✓ ยืนยันการสั่งซื้อแล้ว</small></div>
+                    </div>
+                    <p>ทางร้านให้ข้อมูลสินค้าดีค่ะ ตอบคำถามละเอียด ทำให้ตัดสินใจได้ง่ายขึ้น</p>
+                </article>
+                <article class="tea-review">
+                    <div class="tea-review-user"><span class="tea-review-avatar">ง</span>
+                        <div><b>ม่าน ฟ้า</b><small>✓ ยืนยันการสั่งซื้อแล้ว</small></div>
+                    </div>
+                    <p>สินค้าตรงตามรายละเอียดที่สั่งไว้ค่ะ ตอนนี้เก็บไว้พร้อมคู่มือเพื่อศึกษาวิธีใช้งานให้ถูกต้อง</p>
+                </article>
+            </div>
+            <div class="tea-shop-proof"><b>หมายเหตุ</b>
+                <p>ข้อความเหล่านี้เป็นตัวอย่างเท่านั้น โปรดแทนที่ด้วยรีวิวจริงที่ลูกค้าอนุญาตให้เผยแพร่ก่อนใช้เป็นหลักฐานความน่าเชื่อถือ</p>
+            </div><a class="review-buy" href="#dat-hang">🛒 สั่งซื้อสินค้าเลย</a></section>
+        <section class="tea-reviews" id="faq">
+            <h2>📋 คำถามที่พบบ่อย</h2>
+            <div class="tea-review"><b>อุปกรณ์นี้ใช้แทนการปฐมพยาบาลได้หรือไม่?</b>
+                <p>ไม่ได้ ควรปฏิบัติตามแนวทางปฐมพยาบาลที่เหมาะสม และขอความช่วยเหลือฉุกเฉินเมื่อจำเป็น</p>
+            </div>
+            <div class="tea-review"><b>มีหน้ากากกี่ขนาด?</b>
+                <p>ตามข้อมูลผลิตภัณฑ์ มีหน้ากาก 3 ขนาด โปรดตรวจสอบขนาดและข้อจำกัดในคู่มือ</p>
+            </div>
+            <div class="tea-review"><b>ชำระเงินอย่างไร?</b>
+                <p>ชำระเงินปลายทาง จัดส่งฟรีทั่วประเทศไทย</p>
+            </div>
+        </section>
+        <section class="final">
+            <h2>🎉 ราคาพิเศษเริ่มต้น 699 บาท</h2>
+            <p>1 ชุด 699 บาท · 2 ชุด 1,290 บาท · <b>ส่งฟรีทั่วประเทศไทย</b></p>
+            <a href="#dat-hang">🛒 สั่งซื้อเลย</a>
+        </section>
+    </div>
+    <div class="bottom">
+        <a class="price-mini" href="#dat-hang">เริ่มต้น 699 บาท</a>
+        <a class="buy-mini" href="#dat-hang">🛒 สั่งซื้อเลย</a>
+    </div>
+    <div aria-hidden="true" class="success" id="successOverlay">
+        <div class="success-card">
+            <div class="success-icon">✓</div>
+            <h2>รับข้อมูลคำสั่งซื้อแล้ว</h2>
+            <p>ขอบคุณค่ะ เจ้าหน้าที่จะติดต่อเพื่อยืนยันคำสั่งซื้อก่อนจัดส่ง</p>
+            <button id="continueBtn" type="button">กลับไปดูสินค้า</button>
+        </div>
+    </div>
+
+
+    <script>
+        const track=document.getElementById('track'),slides=[...document.querySelectorAll('.slide')],dots=document.getElementById('dots'),count=document.getElementById('count');
+        let current=0,startX=0;
+        function go(i){current=(i+slides.length)%slides.length;track.style.transform=`translateX(${-current*100}%)`;document.querySelectorAll('.dot').forEach((d,n)=>d.classList.toggle('active',n===current));count.textContent=`${current+1}/${slides.length}`}
+        slides.forEach((_,i)=>{const b=document.createElement('button');b.className='dot'+(i===0?' active':'');b.type='button';b.onclick=()=>go(i);dots.appendChild(b)});
+        document.getElementById('next').onclick=()=>go(current+1);document.getElementById('prev').onclick=()=>go(current-1);
+        const gallery=document.getElementById('gallery');gallery.addEventListener('touchstart',e=>startX=e.touches[0].clientX,{passive:true});gallery.addEventListener('touchend',e=>{if(Math.abs(e.changedTouches[0].clientX-startX)>40)go(current+(e.changedTouches[0].clientX<startX?1:-1))},{passive:true});
+        setInterval(()=>go(current+1),4000);
+        function scrollToOrder(){document.getElementById('dat-hang').scrollIntoView({behavior:'smooth',block:'center'})}
+        function money(n){return Number(n).toLocaleString('th-TH')+' บาท'}
+        function updateSummary(){const r=document.querySelector('input[name="package"]:checked');const n=+r.value,price=+r.dataset.price;document.getElementById('summaryPackage').textContent=n+' ชุด';document.getElementById('summaryPrice').textContent=money(price);document.getElementById('summaryShip').textContent='ฟรี';document.getElementById('summaryTotal').textContent=money(price)}
+        document.querySelectorAll('.pkg').forEach(label=>label.addEventListener('click',()=>{document.querySelectorAll('.pkg').forEach(x=>x.classList.remove('selected'));label.classList.add('selected');label.querySelector('input').checked=true;updateSummary()}));updateSummary();
+        // ใส่ Google Apps Script URL ของตลาดไทยก่อนเปิดรับออเดอร์
+        // GOOGLE APPS SCRIPT: เปลี่ยน URL นี้เมื่อพร้อมใช้งานกับชีตประเทศไทย
+        const API_URL='https://script.google.com/macros/s/AKfycbzrLmmME5vxkoGJnF30T4Ego7VPvYS9I5aTcr44hhaD-oSYz7F_XCmh2mQaKmkvnf6_/exec';
+        function validPhone(v){const p=v.replace(/[\s-]/g,'').replace(/^\+66/,'0');return /^0[689]\d{8}$/.test(p)}
+        function submitToSheet(data){return new Promise((resolve,reject)=>{if(!API_URL)return reject(new Error('ยังไม่ได้เชื่อมต่อระบบรับคำสั่งซื้อ กรุณาติดต่อร้านค้า'));const iframe=document.createElement('iframe');iframe.name='orderFrame_'+Date.now();iframe.style.cssText='position:fixed;width:1px;height:1px;left:-9999px;opacity:0;border:0';document.body.appendChild(iframe);const form=document.createElement('form');form.method='POST';form.action=API_URL;form.target=iframe.name;form.style.display='none';Object.entries(data).forEach(([k,v])=>{const x=document.createElement('input');x.type='hidden';x.name=k;x.value=v==null?'':v;form.appendChild(x)});document.body.appendChild(form);let done=false;const cleanup=()=>{form.remove();iframe.remove()};iframe.onload=()=>{if(done)return;done=true;setTimeout(()=>{cleanup();resolve()},500)};setTimeout(()=>{if(done)return;done=true;cleanup();reject(new Error('หมดเวลารอการตอบกลับ กรุณาลองใหม่'))},20000);form.submit()})}
+        document.getElementById('orderForm').addEventListener('submit',async e=>{e.preventDefault();const name=document.getElementById('name').value.trim(),phone=document.getElementById('phone').value.trim(),address=document.getElementById('address').value.trim(),r=document.querySelector('input[name="package"]:checked'),btn=document.getElementById('submitOrderBtn');if(!name){alert('กรุณากรอกชื่อผู้รับ');return}if(!validPhone(phone)){alert('กรุณากรอกเบอร์โทรศัพท์ไทยให้ถูกต้อง');return}if(!address){alert('กรุณากรอกที่อยู่จัดส่ง');return}const n=+r.value,price=+r.dataset.price,params=new URLSearchParams(location.search);btn.disabled=true;btn.textContent='⏳ กำลังส่งข้อมูล...';if(typeof fbq==='function')fbq('track','InitiateCheckout',{content_name:'Anti-Choking Suction Device',content_type:'product',content_ids:['anti-choking-suction-device-'+n],value:price,currency:'THB',num_items:n});try{await submitToSheet({name,phone,address,product:'Anti-Choking Suction Device',weight:n+' ชุด',quantity:n,unitPrice:price/n,shippingFee:0,total:price,currency:'THB',source:params.get('utm_source')||'',medium:params.get('utm_medium')||'',campaign:params.get('utm_campaign')||'',content:params.get('utm_content')||'',pageUrl:location.href});if(typeof fbq==='function')fbq('track','Lead',{content_name:'Anti-Choking Suction Device',content_type:'product',content_ids:['anti-choking-suction-device-'+n],value:price,currency:'THB',num_items:n});document.getElementById('successOverlay').classList.add('show');e.target.reset();document.querySelectorAll('.pkg')[0].click()}catch(err){alert(err.message)}finally{btn.disabled=false;btn.textContent='🛒 ยืนยันคำสั่งซื้อ'}});
+        document.getElementById('continueBtn').onclick=()=>document.getElementById('successOverlay').classList.remove('show');
+        // Meta Pixel code and Google Apps Script URL retained from the original template. Update both before going live.
+    </script>
+</body>
+
+</html>
